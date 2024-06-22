@@ -4,7 +4,8 @@
   "description": "project 2 of Hexlet",
   "type": "module",
   "bin": {
-    "gendiff": "bin/gendiff.js"
+    "gendiff": "bin/gendiff.js",
+    "test2": "bin/index.js"
   },
   "main": "index.js",
   "scripts": {
@@ -21,7 +22,7 @@
   },
   "homepage": "https://github.com/RockForr/frontend-project-46#readme",
   "dependencies": {
-    "commander": "^12.1.0"
-  },
-  "devDependencies": {}
+    "commander": "^12.1.0",
+    "js-yaml": "^4.1.0"
+  }
 }
