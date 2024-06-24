@@ -23,6 +23,7 @@
   "homepage": "https://github.com/RockForr/frontend-project-46#readme",
   "dependencies": {
     "commander": "^12.1.0",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21"
   }
 }
