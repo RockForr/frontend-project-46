@@ -2,6 +2,7 @@ import path from "path";
 import fs from "fs";
 import parse from "./parse.js";
 import buildTree from "./treeBuilder.js";
+import printResult from "./printResult.js";
 
 const getFullPath = (filePath) => path.resolve(process.cwd(), filePath);
 const extFormat = (filePath) => path.extname(filePath).slice(1);
@@ -16,7 +17,7 @@ const gendiff = (filePath1, filePath2) => {
 
   const tree = buildTree(data1, data2);
 
-  console.log(tree);
+  console.log(printResult(tree));
 };
 
   export default gendiff;
