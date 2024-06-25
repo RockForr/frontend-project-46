@@ -7,15 +7,15 @@ const printResult = (tree) => {
         break;
       case 'added':
         result = `${result}  + ${element.key}: ${element.value}\n`;
-        break
+        break;
       case 'unchanged':
-        result = `${result}  ${element.key}: ${element.value}\n`;
-        break
+        result = `${result}    ${element.key}: ${element.value}\n`;
+        break;
       default:
         result = `${result}  - ${element.key}: ${element.oldValue}\n  + ${element.key}: ${element.newValue}\n`;
         break;
     }
-  }    ;
+  };
   result = `${result}}`
   return result;
 };
