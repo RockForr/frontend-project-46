@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1719680093918" clover="3.2.0">
-  <project timestamp="1719680093918" name="All files">
+<coverage generated="1719681618934" clover="3.2.0">
+  <project timestamp="1719681618934" name="All files">
     <metrics statements="76" coveredstatements="74" conditionals="19" coveredconditionals="17" methods="7" coveredmethods="7" elements="102" coveredelements="98" complexity="0" loc="76" ncloc="76" packages="1" files="4" classes="4"/>
     <file name="gendiffSrc.js" path="/home/vboxuser/frontend-project-46/src/gendiffSrc.js">
       <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
