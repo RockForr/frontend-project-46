@@ -1,8 +1,8 @@
-import path from "path";
-import fs from "fs";
-import parse from "./parse.js";
-import buildTree from "./treeBuilder.js";
-import printResult from "./printResult.js";
+import path from 'path';
+import fs from 'fs';
+import parse from './parse.js';
+import buildTree from './treeBuilder.js';
+import printResult from './printResult.js';
 
 const getFullPath = (filePath) => path.resolve(process.cwd(), filePath);
 const extFormat = (filePath) => path.extname(filePath).slice(1);
@@ -16,8 +16,8 @@ const gendiff = (filePath1, filePath2) => {
   const data2 = getData(filePath2);
 
   const tree = buildTree(data1, data2);
-
-  console.log(printResult(tree));
+  
+  return printResult(tree);
 };
 
-  export default gendiff;
+export default gendiff;

@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
-import gendiff from "../src/gendiffSrc.js";
 import { Command } from 'commander';
-const program = new Command;
+import gendiff from '../src/gendiffSrc.js';
+
+const program = new Command();
 
 program
   .arguments('<filePath1> <filePath2>')
@@ -10,7 +11,6 @@ program
   .option('-V, --version', 'output the version number')
   .option('-f, --format [type]', 'output format')
   .action((file1, file2) => {
-    gendiff(file1, file2);
-    return gendiff;
-  })
+    console.log(gendiff(file1, file2));
+  });
 program.parse();

@@ -15,8 +15,8 @@ const printResult = (tree) => {
         result = `${result}  - ${element.key}: ${element.oldValue}\n  + ${element.key}: ${element.newValue}\n`;
         break;
     }
-  };
-  result = `${result}}`
+  }
+  result = `${result}}`;
   return result;
 };
 
