@@ -1,11 +1,11 @@
 import _ from 'lodash';
 
 const buildTree = (data1, data2) => {
-  const arr = _.union(Object.keys(data1), Object.keys(data2));
-  const sortedKeys = _.sortBy(arr);
-  return sortedKeys.map((key) => {
+  const keys = _.sortBy(_.uniq([..._.keys(data1), ..._.keys(data2)]));
+  
+  return keys.map((key) => {
     if (_.isPlainObject(data1[key]) && _.isPlainObject(data2[key])) {
-      return { key, type: 'nested', children: buildTree(data1[key], data2[key]) };
+      return { key, type: 'node', children: buildTree(data1[key], data2[key]) };
     }
     if (!_.has(data1, key)) return { key, value: data2[key], type: 'added' };
     if (!_.has(data2, key)) return { key, value: data1[key], type: 'deleted' };

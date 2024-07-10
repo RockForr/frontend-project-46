@@ -2,6 +2,7 @@
 
 import { Command } from 'commander';
 import gendiff from '../src/gendiffSrc.js';
+import stylish from '../src/stylish.js';
 
 const program = new Command();
 
@@ -11,6 +12,6 @@ program
   .option('-V, --version', 'output the version number')
   .option('-f, --format [type]', 'output format')
   .action((file1, file2) => {
-    console.log(gendiff(file1, file2));
+    console.log(stylish(gendiff(file1, file2)));
   });
 program.parse();
