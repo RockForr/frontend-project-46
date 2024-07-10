@@ -8,10 +8,10 @@ install: install-deps
 	npx simple-git-hooks
 
 test:
-	npm test
+	sudo npm test
 
 test-coverage:
-	npm test -- --coverage --coverageProvider=v8
+	sudo npm test -- --coverage --coverageProvider=v8
 
 .PHONY: test	npx simple-git-hooks
 

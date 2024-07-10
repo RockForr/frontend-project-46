@@ -1,6 +1,6 @@
 import gendiff from '../src/gendiffSrc.js';
 import fs from 'fs';
-import stylish from '../src/stylish.js';
+import stylish from '../formatters/stylish.js';
 
 test("gendiff(json)", () => {
 

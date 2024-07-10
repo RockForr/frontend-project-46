@@ -2,7 +2,7 @@
 
 import { Command } from 'commander';
 import gendiff from '../src/gendiffSrc.js';
-import stylish from '../src/stylish.js';
+import { stylish, plain } from '../formatters/index.js';
 
 const program = new Command();
 
