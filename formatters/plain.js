@@ -1,39 +1,31 @@
-const plain = (data) => {
-
-const makeStr = (key, value) => {
-  const valueIsObject = typeof value === 'object' && value !== null;
-
-  const objectToString = (data) => {
-    const str = Object.entries(data).map(([dataKey, dataValue]) => {
-      return makeStr(dataKey, dataValue);
-    }).join('\n');
-    return str;
-  };
-
-  return `Property ${key} ${valueIsObject ? objectToString(value) : value}`;
+const status = {
+  added: 'was added with value:',
+  deleted: 'was removed',
+  changed: 'was updated.',
 };
 
-   const str = data.flatMap((item) => {
-     const { key, type } = item;
-
-     switch (type) {
-       case 'added':
-         return makeStr(key, item.value);
-//       case 'deleted':
-//         return makeStr(key, item.value, curIndent, prefix[type]);
-//       case 'unchanged':
-//         return makeStr(key, item.value, curIndent);
-//       case 'changed':
-//         // eslint-disable-next-line max-len
-//         return [makeStr(key, item.oldValue, curIndent, prefix.deleted), makeStr(key, item.newValue, curIndent, prefix.added)];
-//       case 'node':
-//         return makeStr(key, stylish(item.children, curIndent), curIndent);
-     }
-   }).join('\n');
-
-   return str;
-
-console.log('ololo')
+const valueToString = (value) => {
+  if (typeof value === 'object' && value !== null) {
+    return '[complex value]';
+  }
+  return typeof value === 'string' ? `'${value}'` : value;
 };
+
+const plain = (data, way = '') => data.flatMap((item) => {
+  const { key, type } = item;
+
+  switch (type) {
+    case 'added':
+      return `Property '${way}${key}' ${status[type]} ${valueToString(item.value)}`;
+    case 'deleted':
+      return `Property '${way}${key}' ${status[type]}`;
+    case 'changed':
+      return `Property '${way}${key}' ${status[type]} From ${valueToString(item.oldValue)} to ${valueToString(item.newValue)}`;
+    case 'node':
+      return plain(item.children, `${way + key}.`);
+    default:
+      return null;
+  }
+}).filter((item) => item).join('\n');
 
 export default plain;

@@ -2,10 +2,10 @@ lint:
 	sudo npx eslint .
 
 publish:
-	npm publish --dry-run
+	sudo npm publish --dry-run
 
 install: install-deps
-	npx simple-git-hooks
+	sudo npx simple-git-hooks
 
 test:
 	sudo npm test
@@ -13,9 +13,9 @@ test:
 test-coverage:
 	sudo npm test -- --coverage --coverageProvider=v8
 
-.PHONY: test	npx simple-git-hooks
+.PHONY: test	sudo npx simple-git-hooks
 
 install-deps:
-	npm ci --legacy-peer-deps
+	sudo npm ci --legacy-peer-deps
 
 .PHONY: test

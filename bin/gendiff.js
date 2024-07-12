@@ -12,6 +12,6 @@ program
   .option('-V, --version', 'output the version number')
   .option('-f, --format [type]', 'output format')
   .action((file1, file2) => {
-    console.log(stylish(gendiff(file1, file2)));
+    console.log(plain(gendiff(file1, file2)));
   });
 program.parse();

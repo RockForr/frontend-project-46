@@ -15,7 +15,7 @@ const gendiff = (filePath1, filePath2) => {
   const data2 = getData(filePath2);
 
   const tree = buildTree(data1, data2);
-  
+
   return tree;
 };
 
