@@ -10,7 +10,7 @@ program
   .description('Compares two configuration files and shows a difference.')
   .option('-V, --version', 'output the version number')
   .option('-f, --format [type]', 'output format', 'stylish')
-  .action((file1, file2, { format }) => {
-    console.log(gendiff(file1, file2, format));
+  .action((file1, file2, option) => {
+    console.log(gendiff(file1, file2, option.format));
   });
 program.parse();

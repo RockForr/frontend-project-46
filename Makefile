@@ -4,8 +4,8 @@ lint:
 publish:
 	sudo npm publish --dry-run
 
-install: install-deps
-	sudo npx simple-git-hooks
+install:
+	sudo npm ci
 
 test:
 	sudo npm test
@@ -13,9 +13,5 @@ test:
 test-coverage:
 	sudo npm test -- --coverage --coverageProvider=v8
 
-.PHONY: test	sudo npx simple-git-hooks
-
-install-deps:
-	sudo npm ci --legacy-peer-deps
-
-.PHONY: test
+gendiff:
+    sudo node bin/gendiff.js
