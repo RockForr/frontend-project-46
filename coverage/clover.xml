@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1720784346772" clover="3.2.0">
-  <project timestamp="1720784346773" name="All files">
-    <metrics statements="142" coveredstatements="142" conditionals="47" coveredconditionals="47" methods="13" coveredmethods="13" elements="202" coveredelements="202" complexity="0" loc="142" ncloc="142" packages="2" files="6" classes="6"/>
+<coverage generated="1720966815394" clover="3.2.0">
+  <project timestamp="1720966815394" name="All files">
+    <metrics statements="148" coveredstatements="148" conditionals="50" coveredconditionals="50" methods="14" coveredmethods="14" elements="212" coveredelements="212" complexity="0" loc="148" ncloc="148" packages="2" files="7" classes="7"/>
     <package name="formatters">
-      <metrics statements="89" coveredstatements="89" conditionals="31" coveredconditionals="31" methods="7" coveredmethods="7"/>
+      <metrics statements="95" coveredstatements="95" conditionals="34" coveredconditionals="34" methods="8" coveredmethods="8"/>
       <file name="index.js" path="/home/vboxuser/frontend-project-46/formatters/index.js">
-        <metrics statements="12" coveredstatements="12" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <metrics statements="15" coveredstatements="15" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+      <file name="json.js" path="/home/vboxuser/frontend-project-46/formatters/json.js">
+        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
       </file>
       <file name="plain.js" path="/home/vboxuser/frontend-project-46/formatters/plain.js">
         <metrics statements="31" coveredstatements="31" conditionals="14" coveredconditionals="14" methods="2" coveredmethods="2"/>
@@ -118,16 +127,16 @@
         <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
       </file>
@@ -148,22 +157,22 @@
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="4" count="16" type="stmt"/>
-        <line num="5" count="16" type="stmt"/>
-        <line num="6" count="16" type="cond" truecount="1" falsecount="0"/>
-        <line num="7" count="59" type="cond" truecount="2" falsecount="0"/>
-        <line num="8" count="12" type="stmt"/>
-        <line num="9" count="12" type="cond" truecount="1" falsecount="0"/>
-        <line num="10" count="59" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="59" type="cond" truecount="2" falsecount="0"/>
-        <line num="12" count="59" type="cond" truecount="1" falsecount="0"/>
-        <line num="13" count="13" type="stmt"/>
-        <line num="14" count="13" type="stmt"/>
-        <line num="15" count="13" type="stmt"/>
-        <line num="16" count="13" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="10" type="stmt"/>
-        <line num="18" count="16" type="stmt"/>
-        <line num="19" count="16" type="stmt"/>
+        <line num="4" count="21" type="stmt"/>
+        <line num="5" count="21" type="stmt"/>
+        <line num="6" count="21" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="77" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="16" type="stmt"/>
+        <line num="9" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="77" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="77" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="77" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="17" type="stmt"/>
+        <line num="14" count="17" type="stmt"/>
+        <line num="15" count="17" type="stmt"/>
+        <line num="16" count="17" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="13" type="stmt"/>
+        <line num="18" count="21" type="stmt"/>
+        <line num="19" count="21" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
       </file>
