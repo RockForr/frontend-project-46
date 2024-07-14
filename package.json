@@ -4,10 +4,9 @@
   "description": "project 2 of Hexlet",
   "type": "module",
   "bin": {
-    "gendiff": "bin/gendiff.js",
-    "test2": "bin/index.js"
+    "gendiff": "bin/gendiff.js"
   },
-  "main": "index.js",
+  "main": "bin/gendiff.js",
   "scripts": {
     "test": "jest",
     "coverage": "jest --coverage"
