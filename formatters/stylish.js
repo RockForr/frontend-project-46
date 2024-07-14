@@ -35,7 +35,7 @@ const stylish = (data, deep = 0) => {
       case 'changed':
         // eslint-disable-next-line max-len
         return [makeStr(key, item.oldValue, curIndent, prefix.deleted), makeStr(key, item.newValue, curIndent, prefix.added)];
-      case 'node':
+      default:
         return makeStr(key, stylish(item.children, curIndent), curIndent);
     }
   }).join('\n');
