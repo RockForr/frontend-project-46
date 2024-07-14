@@ -14,4 +14,5 @@ test-coverage:
 	sudo npm test -- --coverage --coverageProvider=v8
 
 gendiff:
-    sudo node bin/gendiff.js
+	sudo node bin/gendiff.js
+	
