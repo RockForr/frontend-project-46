@@ -10,7 +10,7 @@ test('gendiff(yaml)', () => {
 });
 
 test('gendiff(yml)', () => {
-  expect(gendiff('__fixtures__/file1.yml', '__fixtures__/file2.yml')).toEqual(fs.readFileSync('__fixtures__/resultFlat.txt', 'utf-8'));
+  expect(gendiff('__fixtures__/file1.yml', '__fixtures__/file2.yml')).toEqual(fs.readFileSync('__fixtures__/result.txt', 'utf-8'));
 });
 
 test('gendiff(plain)', () => {
