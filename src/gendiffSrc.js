@@ -4,7 +4,7 @@ import path from 'path';
 import fs from 'fs';
 import parse from './parse.js';
 import buildTree from './treeBuilder.js';
-import formater from '../formatters/index.js';
+import formater from './formatters/index.js';
 
 const getFullPath = (filePath) => path.resolve(process.cwd(), filePath);
 const extFormat = (filePath) => path.extname(filePath).slice(1);
