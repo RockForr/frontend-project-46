@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import path from 'path';
 import fs from 'fs';
 import parse from './parse.js';
@@ -22,4 +20,4 @@ const gendiff = (filePath1, filePath2, format) => {
   return formater(tree, format);
 };
 
-export default gendiff;
+export { gendiff, getFullPath };
