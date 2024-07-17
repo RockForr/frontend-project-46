@@ -20,4 +20,4 @@ const gendiff = (filePath1, filePath2, format) => {
   return formater(tree, format);
 };
 
-export { gendiff, getFullPath };
+export default gendiff;

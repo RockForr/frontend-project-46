@@ -1,11 +1,7 @@
 import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
-import { gendiff, getFullPath } from '../src/gendiffSrc.js';
-
-test('Path', () => {
-  expect(getFullPath('__fixtures__/file1.json')).toEqual('/home/vboxuser/frontend-project-46/__fixtures__/file1.json');
-});
+import gendiff from '../src/gendiffSrc.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
