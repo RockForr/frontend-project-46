@@ -1,3 +1,38 @@
+**Gendiff** – это утилита для сравнения двух файлов. Она отображает различия между файлами в человекочитаемом виде.
+
+## Особенности:
+
+- Поддержка JSON и YAML файлов
+- Простота использования из командной строки
+- Удобный вывод различий в форматах json, stylish, plain
+
+## Системные требования:
+
+- Node.js версии 14.0 или выше
+- npm (обычно устанавливается вместе с Node.js)
+
+## Установка:
+
+Clone the repository:
+
+```bash
+git clone https://github.com/RockForr/frontend-project-46.git
+
+```
+
+Navigate to the project directory:
+
+```bash
+cd frontend-project-46
+
+```
+Install dependencies:
+
+```bash
+make install
+
+```
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/RockForr/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/RockForr/frontend-project-46/actions)
 
